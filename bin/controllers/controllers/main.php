@@ -36,6 +36,23 @@ final class main extends MainSwitchers
     ):void
     {
 
+        $json = new \Epaphrodites\epaphrodites\env\json\Json();
+        
+        if (static::isValidMethod()) {
+            
+            $prompts = static::isAjax('__prompt__') ? static::isAjax('__prompt__') : '';
+            $responses = static::isAjax('__response__') ? static::isAjax('__response__') : '';
+
+            $json->path( _DIR_JSON_DATAS_. '/ollama/archive.json')
+                    ->add(
+                        [
+                            'prompt' => $prompts, 
+                            'reponses' => $responses
+                        ]);
+
+            return;
+        }
+
         $this->views($html, []);
     }
     

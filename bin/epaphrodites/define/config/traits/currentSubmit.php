@@ -160,7 +160,7 @@ trait currentSubmit
                 default => static::isGetJSON(),
             };
     
-            if ($postData !== null) {
+            if ($postData == null) {
                 $data = json_decode($postData, true, 512, JSON_THROW_ON_ERROR);
     
                 return isset($data[$key]) ? static::noSpace($data[$key]) : null;

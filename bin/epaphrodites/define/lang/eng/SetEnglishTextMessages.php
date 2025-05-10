@@ -25,7 +25,7 @@ class SetEnglishTextMessages
             'author' => 'Epaphrodites community',
             'mdpnotsame' => "Incorrect password",
             'fileempty' => "No file selected!!!",
-            'site-title' => 'HOME | EPAPHRODITES',
+            'site-title' => 'OLLAMA BOT',
             'description' => 'epaphrodites agency',
             '419' => "Your session has expired!!!",
             'error_text' => 'txt error epaphrodites',
