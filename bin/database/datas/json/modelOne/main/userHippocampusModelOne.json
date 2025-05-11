@@ -1,0 +1,42 @@
+{
+    "0": {
+        "date": "10-25-2025 08:08:56",
+        "login": "admin",
+        "question": "bonjour",
+        "answers": "Épaphrodites ici, prêt à vous aider en tant que support IA. Que puis-je faire pour vous ? ",
+        "language": "fr",
+        "previous": false
+    },
+    "1": {
+        "date": "10-25-2025 08:09:18",
+        "login": "admin",
+        "question": "quelle heure fait-il",
+        "answers": "Il est 08:09:18",
+        "language": "fr",
+        "previous": false
+    },
+    "2": {
+        "date": "10-25-2025 08:09:48",
+        "login": "admin",
+        "question": "ET LA DATE",
+        "answers": "Pour que je puisse répondre efficacement à votre préoccupation, pourriez-vous étoffer vos explications ?",
+        "language": "fr",
+        "previous": true
+    },
+    "3": {
+        "date": "10-25-2025 08:09:54",
+        "login": "admin",
+        "question": "la date",
+        "answers": "Votre préoccupation n'est pas claire pour moi. Pourriez-vous fournir plus de détails, s'il vous plaît ?",
+        "language": "fr",
+        "previous": true
+    },
+    "4": {
+        "date": "10-25-2025 08:10:09",
+        "login": "admin",
+        "question": "la date d'aujourd'hui",
+        "answers": "Pour garantir la précision, pourriez-vous fournir plus de détails, s'il vous plaît ?",
+        "language": "fr",
+        "previous": true
+    }
+}

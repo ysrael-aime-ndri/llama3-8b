@@ -7,6 +7,8 @@ use Epaphrodites\controllers\switchers\MainSwitchers;
 final class main extends MainSwitchers
 {
     private object $visit;
+    private object $json;
+    private object $data;
     private object $session;
     private string $ans = '';
     private string $alert = '';
@@ -21,8 +23,10 @@ final class main extends MainSwitchers
      */
     private function initializeObjects(): void
     {
+        $this->json = $this->getObject(static::$initNamespace, 'json');
         $this->visit = $this->getObject(static::$initNamespace, 'visit');
-        $this->session = $this->getFunctionObject(static::initNamespace(), 'session');
+        $this->data = $this->getFunctionObject(static::initNamespace(), 'datas');
+        $this->session = $this->getFunctionObject(static::$initNamespace, 'session');
     }
 
     /**
@@ -35,20 +39,29 @@ final class main extends MainSwitchers
         string $html
     ):void
     {
-
-        $json = new \Epaphrodites\epaphrodites\env\json\Json();
-        
         if (static::isValidMethod()) {
             
-            $prompts = static::isAjax('__prompt__') ? static::isAjax('__prompt__') : '';
-            $responses = static::isAjax('__response__') ? static::isAjax('__response__') : '';
+            // Save conversation
+            if(static::isAjax('__prompt__')&&static::isAjax('__response__')){
 
-            $json->path( _DIR_JSON_DATAS_. '/ollama/archive.json')
-                    ->add(
-                        [
-                            'prompt' => $prompts, 
-                            'reponses' => $responses
-                        ]);
+                $prompts = static::isAjax('__prompt__');
+                $responses = static::isAjax('__response__');
+
+                $this->json->path( _DIR_JSON_DATAS_. '/ollama/archive.json')->add(
+                            [
+                                'prompt' => $prompts, 
+                                'reponses' => $responses
+                            ]);
+            }
+
+            // Get instructions
+            if(static::isAjax('__lang__')&&static::isAjax('__botName__')){
+
+                $lang = static::isAjax('__lang__');
+                $responses = static::isAjax('__botName__');
+
+               echo (string) $this->data->botInstructions( $lang, $responses );
+            }
 
             return;
         }

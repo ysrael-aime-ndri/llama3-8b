@@ -1,0 +1,26 @@
+[
+  {
+    "date": "10-05-2025 07:58:46",
+    "language": "fr",
+    "question": "bonjour",
+    "answers": "Excusez-moi, mais je n'ai pas la r\u00e9ponse. Pouvez-vous m'apprendre ? Si oui, ins\u00e9rez les r\u00e9ponses en les s\u00e9parant avec un '|'. Sinon, \u00e9crivez 'stop' pour continuer.",
+    "login": "admin",
+    "state": true
+  },
+  {
+    "date": "10-05-2025 08:08:45",
+    "language": "fr",
+    "question": "bonjour",
+    "answers": "Merci ! J'ai appris de nouvelles r\u00e9ponses !",
+    "login": "admin",
+    "state": false
+  },
+  {
+    "date": "10-05-2025 08:08:49",
+    "language": "fr",
+    "question": "bonjour",
+    "answers": "Bonjour",
+    "login": "admin",
+    "state": false
+  }
+]
