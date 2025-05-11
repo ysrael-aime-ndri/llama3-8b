@@ -4,9 +4,13 @@
 {% block content %}
   <div class="container">
     <div class="chat-bot-content">
-        <div class="chatbotLogo" align="center">
-            <p>THIS IS A TRAINING CHABOT</p>
-        </div>
+      <div class="chatbotLogo" style="display: flex; justify-content: center; align-items: center; position: relative; height: 60px;">
+        <span>THIS IS A OLLAMA CHATBOT</span>
+        <a class="sign" href="{{__path('login')}}" style="position: absolute; right: 0;">
+          <i class="bi bi-lock-fill"></i> Connexion
+        </a>
+      </div>
+    
       <div class="conversation" id="conversation"></div>
         <div class="input-group">
           <div id="input-container">
