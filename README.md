@@ -7,8 +7,21 @@ To use it, do this :
 - install llama3:8b
  
 # Run server
-```php heredia run:server --port=8000```
+```bash
+php heredia run:server --port=8000
+```
 
 # Default access :
 - Login : admin
 - Password : admin
+
+---
+### 📗 Documentation
+
+- [Documentation](https://epaphrodite.org/)
+
+### 👥 Authors
+
+- [Y'srael Aime N'DRI (Lead) ](https://github.com/ysrael-aime-ndri)
+
+😎 Enjoy yourself
