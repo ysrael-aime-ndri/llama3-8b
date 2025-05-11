@@ -5,6 +5,9 @@ To use it, do this :
 - Install composer
 - Install python 3 or more
 - install llama3:8b
+ 
+# Run server
+`php heredia run:server --port=8000
 
 # Default access :
 - Login : admin
