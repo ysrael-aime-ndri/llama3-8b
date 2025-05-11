@@ -7,7 +7,7 @@ To use it, do this :
 - install llama3:8b
  
 # Run server
-`php heredia run:server --port=8000
+`php heredia run:server --port=8000`
 
 # Default access :
 - Login : admin
