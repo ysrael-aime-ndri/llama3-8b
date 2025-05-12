@@ -8,7 +8,7 @@ To use it, do this :
  
 ---
 
-- Make ``cd your_projeect_name`` and execute the following command to install them:
+- Make ``cd your_projeect_name`` and execute the following command :
 ```bash
 php epaphrodites -i
 ```
@@ -21,13 +21,13 @@ php heredia pip:component
 
 ---
 
-# Run server
+### Run server
 
 ```bash
 php heredia run:server --port=8000
 ```
 
-# Default access :
+### Default access :
 - Login : admin
 - Password : admin
 
