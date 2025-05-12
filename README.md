@@ -1,6 +1,6 @@
 # OLLAMA MODEL llama3:8B
 This template has been created using Epaphrodites Framework.
-To use it, do this :
+To use it, follow these steps :
 - Install php 8.2 or more
 - Install composer
 - Install python 3 or more
